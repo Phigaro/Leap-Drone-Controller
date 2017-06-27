@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>LeapServer</title>
+  <script src="./leap.js"></script>
+  <script src="./leapserver.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div id="main">
+    <div class="Title">
+      <h1>Easy Drone Controller</h1>
+      <p>드론 촬영 영상</p>
+    </div>
+
+    <div class="Stream">
+      <img src="./Image/Stream_Image.png" width="640" height="360">
+    </div>
+    <div class="RightSide">
+      <img id="StickImg" src="./Image/Controller.png" width="400" height="200">
+      <textarea id="curState" rows="10" ,col="50" aria-setsize="500">
+    </textarea>
+    </div>
+
+    <div>
+      <div style="clear:both;"></div>
+      <div id="frameData"></div>
+      <div style="clear:both;"></div>
+      <div id="handData"></div>
+      <div style="clear:both;"></div>
+      <div id="pointableData"></div>
+      <div style="clear:both;"></div>
+
+    </div>
+    <style>
+      div.Title {
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 80px;
+      }
+
+      div.Stream {
+        float: left;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+
+      div.RightSide {
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        width: 1200px;
+      }
+
+      textarea {
+        padding-top: 10px;
+        width: 394px;
+      }
+    </style>
+
+</body>
+
+</html>
